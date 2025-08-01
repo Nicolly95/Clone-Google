@@ -1,0 +1,337 @@
+:root {
+    --color:#252525;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+.container1 ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px;
+}
+.container1 ul li {
+    list-style-type: none;
+}
+.container1 ul li a {
+    text-decoration: none;
+    color: var(--color);
+    font-size: 13px;
+}
+.container1.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px;
+    position: relative;
+    margin-top: -10px;
+}
+.container1.menu a {
+    text-decoration: none;
+}
+.container1.menu p {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 0px;
+    word-spacing: 8px;
+    padding: 3px;
+    margin: 0px;
+    color:var(--color);
+}
+.container1.perfil a {
+    text-decoration: none;
+}
+.container1.perfil i {
+    color: var(--color);
+}
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.container2 img {
+    display: flex;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+}
+.container2.pesquisa,
+.container2.buttons {
+    display: flex;
+    flex-direction: row;
+}
+.container2.pesquisa input {
+    width: 600px;
+    height: 48px;
+    border-radius: 30px;
+    border: 1px solid #bbb;
+}
+.container2.pesquisa.icons {
+    gap: 15px;
+    position: relative;
+    z-index: 1;
+    margin-left: -70px;
+    cursor: pointer;
+}
+.container2.buttons button {
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: #333;
+    font-weight: normal;
+    margin: 30px 10px;
+    font-size: 11.5px;
+    letter-spacing: 0.2px;
+}
+.container3 {
+    display: flex;
+    flex-direction: column;    
+    font-size: 11px;
+    color: #353535;
+    background-color: #eee;
+}
+.container3 a {
+    font-size: 11px;
+    color: #353535;
+    text-decoration: none;
+    padding: 11px 0px;
+}
+.container3.top,
+.container3.bottom {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--color);
+    padding: 0px 20px;
+}
+.container3.bottom {
+    justify-content: space-between;
+}
+.container3.bottom ul {
+    padding: 0px;
+    gap: 10px;
+}
+.container3.bottom ul li,
+.container3.bottom ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #353535;
+}
+.container3.left ul,
+.container3.right ul {
+    display: flex;
+    flex-direction: row;
+    
+}
+.container3.footer2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #252525;
+    justify-content: flex-start;
+    gap: 8px;
+    font-weight: 100;
+    padding: 5px;
+}
+.footer2.left,
+.footer2.right {
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    font-weight: 100;
+    color: #aaa;
+    font-weight: 100;
+    gap: 6px;
+}
+.footer2.left p,
+.footer2.right p {
+    margin: 2px 0px 0px 0px;
+}
+.footer2.left a,
+.footer2.right a {
+    font-weight: 100;
+    text-decoration: none;
+    color: #ccc;
+    padding: 0px;
+}
+.footer2.left a {
+    color: #eee;
+}
+.footer2.left i {
+    color: #aaa;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .container2.pesquisa input  {
+        max-width: 550px;
+        max-height: 46px;
+    }
+    .container2 img {
+        width: 36%;
+    }
+    .container3.top, 
+    .container3.bottom {
+        padding: 0px 10px;
+    }
+    .container2.buttons button {
+        width: 115px;
+        height: 29px;
+        margin: 28px 8px;
+    }
+
+    .container3.top, 
+    .container3.bottom {
+        padding: 0px 11px;
+    }
+    .container3 a {
+        padding: 7px 0px;
+        font-size: 11.2px;
+    }
+    .container3.left ul,
+    .container3.right ul {
+        padding: 7px 0px;
+        font-size: 11.2px;
+        margin: 0px;
+    }
+    .footer2.left, 
+    .footer2.right {
+        font-size: 11.2px;        
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .container2.pesquisa input {
+        max-width: 460px;
+        max-height: 44px;
+    }
+    .container2 img {
+        width: 36%;
+    }
+    .container3.top, 
+    .container3.bottom {
+        padding: 0px 10px;
+    }
+    .container2.buttons button {
+        width: 110px;
+        height: 28px;
+        margin: 25px 8px;
+    }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    body {
+        height: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .container1 {
+        gap: 10px;
+    }
+    .container1 ul li a {
+        font-size: 11px;
+    }
+    .container1 ul {
+        gap: 10px;
+    }
+    .container2.pesquisa input {
+        max-width: 360px;
+        max-height: 40px;
+        border-radius: 30px;
+        position: relative;
+        margin-left: -20px;
+    }
+    .container2 img {
+        width: 45%;
+    }
+    .container2.buttons button {
+        width: 105px;
+        height: 28px;
+        margin: 20px 6px;
+        font-size: 11px;
+    }
+    .container3.footer2 {
+        gap: 10px;
+    }    
+    .container3.top, 
+    .container3.bottom {
+        padding: 0px 10px;
+    }
+    .container3 a {
+        padding: 8px 0px;
+        font-size: 9px;
+    }
+    .container3.left ul,
+    .container3.right ul {
+        margin: 8px 0px;
+        font-size: 9px;
+    }
+    .footer2.left, 
+    .footer2.right {
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
